@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>SWE645 Assignment-1</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .left {
+            width: 50%;
+        }
+
+        .bottomright {
+            position: absolute;
+            bottom: 0x;
+            right: -120px;
+        }
+
+        .right {
+            width: 50%;
+        }
+
+        .left1 {
+            width: 50%;
+
+        }
+
+        .right1 {
+            width: 100%;
+
+        }
+
+        .l1 {
+            width: 100%;
+
+        }
+    </style>
+
+<body>
+
+    <div class="row" style="background-color:lightgoldenrodyellow">
+        <div class="column left">
+            <img src="2.png" alt="computer-picture" height="50%" width="100%">
+            <img src="college.jpg" alt="college" height="50%" width="100%">
+        </div>
+        <div class="column right">
+
+            <div style="background-color: #006633;width:100%;">
+                <strong>
+                    <center><label style="color:white;text-family:sans-serif;font-size:2em; font-weight: 600;">
+                            University Survey Form </label></center>
+                </strong>
+            </div>
+
+            <div class="column left1" style="padding:20px;">
+
+                <div class="row">
+
+                    <div class="column l1">
+
+                        <form name="form" action="./" autocomplete="on">
+                            <div class="item">
+                                <br>
+                                <label for="firstName" class="formLabel">User Name: <a style="color:red"> required</a><img src="firstname.ico"
+                                        width="20%"></label>
+                                <input type="text" class="formInput" placeholder="Enter your name" id="firstName"
+                                    name="firstName" required><br>
+
+                                <label for="streetAdd" class="formLabel">Street Address: <a style="color:red"> required</a><img src="city.ico"
+                                        width="20%"></label>
+                                <input type="text" class="formInput" placeholder="Enter the street address"
+                                    id="streetAdd" name="streetAdd" required><br>
+
+
+                                <label for="city" class="formLabel">City: <a style="color:red"> required</a> <img src="city.ico" width="20%"></label>
+                                <input type="text" class="formInput" placeholder="Enter the city" id="city" name="city"
+                                    required><br>
+
+                                <label for="state" class="formLabel">State:<a style="color:red"> required</a><img src="state.ico" width="20%"></label>
+                                <input type="text" class="formInput" placeholder="Enter the state" id="state"
+                                    name="state" required><br>
+
+
+                                <label for="zip" class="formLabel">zip: <a style="color:red"> required</a><img src="state.ico" width="20%"></label>
+                                <input type="text" class="formInput" placeholder="Enter zip code" id="zip" name="zip"
+                                    required><br>
+
+                                <label for="number" class="formLabel">Telephone Number: <a style="color:red"> required</a><img src="phone.ico"
+                                        width="10%"></label>
+                                <input type="text" class="formInput" placeholder="Enter your telephone number"
+                                    id="number" name="number" required><br>
+
+                                <label for="email" class="formLabel">E-mail: <a style="color:red"> required</a><img src="email.ico" height="20%"
+                                        width="25%"></label>
+                                <input type="text" class="formInput" placeholder="Enter your email id (Eg: abc@gmu.edu)"
+                                    id="email" name="email" required><br>
+
+
+                                <label for="url" class="formLabel">Url: <a style="color:red"> required</a></label>
+                                <input type="text" class="formInput" placeholder="Enter url(Eg: https://gmu.edu)" id="url" name="url"
+                                    required><br>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <label class="formLabel" for="schoolMonth-choice">High School Grad
+                                                Month</label>
+                                            <input class="formInput" placeholder="Graduation Month" style="width:77%"
+                                                list="schoolMonth" id="schoolMonth-choice" name="schoolMonth-choice" />
+                                            <datalist id="schoolMonth">
+                                                <option value="Jan">
+                                                <option value="Feb">
+                                                <option value="March">
+                                                <option value="April">
+                                                <option value="May">
+                                                <option value="June">
+                                                <option value="July">
+                                                <option value="Aug">
+                                                <option value="Sept">
+                                                <option value="Oct">
+                                                <option value="Nov">
+                                                <option value="Dec">
+                                            </datalist>
+                                        </td>
+                                        <td>
+                                            <label class="formLabel" for="schoolYear">Graduation Year</label>
+                                            <input type="text" class="formInput" style="width:50%"
+                                                placeholder="Grad Year" required><br>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                                <label for="dateSurvey" class="formLabel">Date of Survey: <a style="color:red"> required</a><img src="calendar.ico"
+                                        width="20%"></label>
+                                <input type=date class="formInput" id=dateSurvey name="dateSurvey" required><br>
+
+                                <div class="column right1">
+                                    <label class="formLabel">What do you like the most about the campus?</label><br>
+                                    <input class="form_checkbox" type="checkbox" id="student" name="student"
+                                        value="student">
+                                    <label for="student">Student</label><br>
+                                    <input type="checkbox" id="location" name="location" value="location">
+                                    <label for="location">location</label><br>
+                                    <input type="checkbox" id="campus" name="campus" value="campus">
+                                    <label for="campus">Campus</label><br>
+                                    <input type="checkbox" id="atm" name="atm" value="atm">
+                                    <label for="atm">Atmosphere</label><br>
+                                    <input type="checkbox" id="dorm" name="dorm" value="dorm">
+                                    <label for="dorm">Dorm Rooms</label><br>
+                                    <input type="checkbox" id="sports" name="sports" value="sports">
+                                    <label for="sports">Sports</label><br><br>
+
+                                    <label class="formLabel">What made you develop interest towards the
+                                        University</label><br>
+                                    <input type="radio" id="friends" name="friends" value="friends">
+                                    <label for="friends">Friends</label><br>
+                                    <input type="radio" id="tel" name="tel" value="tel">
+                                    <label for="tel">Television</label><br>
+                                    <input type="radio" id="internet" name="internet" value="internet">
+                                    <label for="internet">Internet</label><br>
+                                    <input type="radio" id="oth" name="oth" value="oth">
+                                    <label for="oth">other</label><br><br>
+
+                                    <label class="formLabel" for="rec">Likelihood of recommending this school</label>
+                                    <select class="formDropDown" id="rec" name="recommendation">
+                                        <option value="Very Likely">Very Likely</option>
+                                        <option value="Likely">Likely</option>
+                                        <option value="Unlikely">Unlikely</option>
+                                    </select>
+                                    <br><br>
+                                    <label class="formLabel" for="raffle">Enter atleast 10 numbers from 1 to 100</label>
+                                    <input class="formInput"
+                                        placeholder="Enter atleast 10 numbers from 1 to 100(eg: 1,4,5,...)" type="text"
+                                        id="raffle" name="raffle"><br><br>
+
+                                    <label class="formLabel" for="additional">Additional comments</label>
+                                    <input class="formInput" placeholder="Enter additional comments" type="text"
+                                        id="additional" name="additional"><br>
+
+                                    <button class="form_button" type="submit">Submit</button>
+
+                        </form>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </form>
+    <br>
+    <div class="bottomright">
+        <a href="https://cs.gmu.edu/">
+            <img src="george_mason.png" alt="George Mason Logo" width="50%">
+        </a>
+    </div>
+</body>
+
+</html>
